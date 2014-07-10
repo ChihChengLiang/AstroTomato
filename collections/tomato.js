@@ -1,0 +1,1 @@
+Tomatos = new Meteor.Collection('tomatos');

@@ -10,3 +10,5 @@ accounts-github
 accounts-password
 accounts-ui-bootstrap-3-blaze
 bootstrap-cyborg
+timeago
+iron-router

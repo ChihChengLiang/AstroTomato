@@ -1,6 +1,8 @@
 {
   "packages": {
     "accounts-ui-bootstrap-3-blaze": {},
-    "bootstrap-cyborg": {}
+    "bootstrap-cyborg": {},
+    "timeago": {},
+    "iron-router": {}
   }
 }
