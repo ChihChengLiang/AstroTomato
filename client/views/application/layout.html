@@ -1,16 +1,12 @@
-<head>
-    <title>AstroTomato</title>
-</head>
-
-<body>
+<template name="layout">
     <div class="container">
         <div class="navbar navbar-default" role="navigation">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">AstroTomato</a>
+                <a class="navbar-brand" href="{{pathFor 'tomatosList'}}">AstroTomato</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Link</a>
+                    <li><a href="{{pathFor 'newTomato'}}">New Tomato</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
@@ -19,15 +15,10 @@
                 </ul>
             </div>
         </div>
-        <div class="jumbotron">
-            <h1>AstroTomato</h1>
-            <p>This is a simple tomato clock tool. <strong>AstroTomato</strong> keeps you super productive!</p>
-            <p><a class="btn btn-danger btn-lg">Get Started</a>
-            </p>
-        </div>
         <div id="main" class="row-fluid">
-            {{> tomatosList}}
+            {{> yield}}
         </div>
+
     </div>
-</body>
+</template>
 
