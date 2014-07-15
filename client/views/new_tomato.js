@@ -3,9 +3,23 @@ Template.newTomato.events({
         e.preventDefault();
         var tomato = {
             title: $(e.target).find('[name=title]').val(),
-            created: Date.now()
+            created: Date.now(),
+            tag: $(e.target).find('[name=tag]').tagsinput('items')
         }
-        tomato._id = Tomatos.insert(tomato);
-        Router.go('/');
+
+        Meteor.call('tomatose', tomato, function (error) {
+            if (error)
+                return alert(error.reason);
+            Router.go('/');
+        });
     }
 });
+
+
+
+Template.newTomato.rendered = function () {
+
+    $('input[name=tag]').tagsinput({
+        confirmKeys: [192]
+    });
+};
