@@ -5,11 +5,10 @@
 
 standard-app-packages
 autopublish
-insecure
 accounts-github
 accounts-password
 accounts-ui-bootstrap-3-blaze
 timeago
 iron-router
 bootstrap-tagsinput
-bootstrap-cyborg
+insecure

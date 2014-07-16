@@ -1,5 +1,5 @@
-<template name="tomatoItem">
-    <div class="panel panel-default">
+<template name="projectItem">
+    <div class="panel panel-primary">
         <div class="panel-heading">
             <h3 class="panel-title">
                 <span class="glyphicon glyphicon-ok-sign"></span>
@@ -7,13 +7,9 @@
             </h3>
         </div>
         <div class="panel-body">
-            <span>{{project}}</span>
+            <span>{{url}}</span>
+            <p>{{description}}</p>
 
-            <div>
-                {{#each tag}}
-                <span class="label label-default">{{this}}</span>
-                {{/each}}
-            </div>
         </div>
     </div>
 </template>

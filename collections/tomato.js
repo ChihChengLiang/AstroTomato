@@ -9,7 +9,7 @@ Meteor.methods({
         // ensure the user is logged in
         if (!user)
             throw new Meteor.Error(401, "You need to login to post new tomato");
-        // ensure the post has a title
+        // ensure the tomato has a title
         if (!tomatoAttribute.title)
             throw new Meteor.Error(422, 'Please fill in a title');
         // check that there are no previous posts with the same link
