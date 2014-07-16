@@ -9,15 +9,30 @@ timeLeft = function () {
         Meteor.clearInterval(interval);
         audio = new Audio('ring.ogg');
         audio.play();
-        Router.go("/newTomato");
+        if (isBreak) {
+            Router.go("/");
+        } else {
+            Router.go("/newTomato");
+        }
     }
 }
 
-Template.countDown.rendered = function () {
+Template.countDownTomato.rendered = function () {
     if (!this._rendered) {
         this._rendered = true;
         defaultClock = 10;
         clock = defaultClock;
         interval = Meteor.setInterval(timeLeft, 1000);
+        isBreak = false;
+    }
+}
+
+Template.countDownBreak.rendered = function () {
+    if (!this._rendered) {
+        this._rendered = true;
+        defaultClock = 5;
+        clock = defaultClock;
+        interval = Meteor.setInterval(timeLeft, 1000);
+        isBreak = true;
     }
 }

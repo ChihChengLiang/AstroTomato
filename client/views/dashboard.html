@@ -1,7 +1,12 @@
 <template name="dashboard">
     {{#if notloggedin }} {{>welcome}} {{/if}}
+    <!--
     <div class="row-fluid">
         <div class="col-md-6">{{> projectsList}}</div>
         <div class="col-md-6">{{> tomatosList}}</div>
+    </div>
+-->
+    <div class="row-fluid">
+        {{> tomatosList}}
     </div>
 </template>
