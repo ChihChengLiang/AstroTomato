@@ -3,7 +3,6 @@
     "accounts-ui-bootstrap-3-blaze": {},
     "timeago": {},
     "iron-router": {},
-    "bootstrap-tagsinput": {},
-    "bootstrap-cyborg": {}
+    "bootstrap-tagsinput": {}
   }
 }

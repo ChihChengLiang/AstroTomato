@@ -10,5 +10,6 @@ accounts-password
 accounts-ui-bootstrap-3-blaze
 timeago
 iron-router
-bootstrap-tagsinput
 insecure
+bootstrap-3
+bootstrap-tagsinput

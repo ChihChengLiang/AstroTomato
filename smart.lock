@@ -5,14 +5,13 @@
       "accounts-ui-bootstrap-3-blaze": {},
       "timeago": {},
       "iron-router": {},
-      "bootstrap-tagsinput": {},
-      "bootstrap-cyborg": {}
+      "bootstrap-tagsinput": {}
     },
     "packages": {
       "accounts-ui-bootstrap-3-blaze": {
         "git": "https://github.com/rajit/meteor-accounts-ui-bootstrap-3.git",
-        "tag": "v0.3.9",
-        "commit": "1f21dbc5cadc788c0ada5df4f730b26660a1d5ea"
+        "tag": "v0.3.10",
+        "commit": "2cf78b49529e62060da086ca0e861fabcbc84928"
       },
       "timeago": {
         "git": "https://github.com/Differential/timeago.git",
@@ -28,11 +27,6 @@
         "git": "https://github.com/ajduke/meteor-bootstrap-tagsinput.git",
         "tag": "v0.0.2",
         "commit": "32214c66ddc6e569c3b88fd65be8a70b10f0769d"
-      },
-      "bootstrap-cyborg": {
-        "git": "https://github.com/and-fri/meteor-bootstrap-cyborg.git",
-        "tag": "v0.0.2",
-        "commit": "d066ef13555ff79ebf99eac058b9f1dc37442060"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
