@@ -8,8 +8,12 @@ Template.newTomato.events({
         };
 
         Meteor.call('tomatose', tomato, function (error) {
-            if (error) {return alert(error.reason); }
-            Router.go('/');
+            if (error) {
+                // display the error to the user
+                throwError(error.reason);
+            } else {
+                Router.go('/');
+            }
         });
     }
 });
@@ -17,6 +21,6 @@ Template.newTomato.events({
 
 Template.newTomato.rendered = function () {
     $("input[name='tag']").tagsinput({
-        confirmKeys:[192,44]
+        confirmKeys: [192, 44]
     });
 };
