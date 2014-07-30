@@ -4,7 +4,6 @@
 # but you can also edit it by hand.
 
 standard-app-packages
-autopublish
 accounts-github
 accounts-password
 accounts-ui-bootstrap-3-blaze
@@ -13,3 +12,4 @@ iron-router
 insecure
 bootstrap-3
 bootstrap-tagsinput
+autopublish
